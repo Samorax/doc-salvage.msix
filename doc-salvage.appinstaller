@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppInstaller
+    xmlns="http://schemas.microsoft.com/appx/appinstaller/2021"
+    Version="1.0.0.0"
+    Uri="https://raw.githubusercontent.com/samorax/doc-salvage.msix/main/doc-salvage.appinstaller" >
+
+	<MainPackage
+        Name="15191cc9-200a-4883-8f6c-006910f07916"
+        Publisher="CN=BYBWE"
+        Version="1.1.9.0"
+        Uri="https://docsalvage.z19.web.core.windows.net/Doc-Salvage_1.1.9.0_x64.msix"
+		ProcessorArchitecture="x64"/>
+
+	<Dependencies>
+		<Package
+            Name="Microsoft.WindowsAppRuntime.1.7"
+            Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+            Version="7000.522.1444.0"
+            ProcessorArchitecture="x64"
+            Uri="https://docsalvage.z19.web.core.windows.net/AppDependencies/Microsoft.WindowsAppRuntime.1.7.msix" />
+		<Package
+             Name="MicrosoftVCredist.x64"  
+             Publisher="CN=BYBWE"
+             Version="14.44.35211.0"
+             ProcessorArchitecture="x64"
+             Uri="https://raw.githubusercontent.com/samorax/doc-salvage.msix/main/MicrosoftVCredist.x64_14.44.35211.0_x64__sys6aq8v34nma.msix" />
+		<Package 
+             Name=".NETSDK9.0.304"
+             Publisher="CN=BYBWE"
+             Version="9.0.3.0"
+             ProcessorArchitecture="x64"
+             Uri="https://raw.githubusercontent.com/samorax/doc-salvage.msix/main/.NETSDK9.0.304_9.0.3.0_x64__sys6aq8v34nma.msix" />
+			 
+		
+	</Dependencies>
+
+	<UpdateSettings>
+		<OnLaunch
+            HoursBetweenUpdateChecks="12"
+            UpdateBlocksActivation="true"
+            ShowPrompt="true" />
+		<AutomaticBackgroundTask />
+		<ForceUpdateFromAnyVersion>true</ForceUpdateFromAnyVersion>
+	</UpdateSettings>
+
+</AppInstaller>
